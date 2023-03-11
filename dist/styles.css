@@ -135,7 +135,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Sono", sans-serif;
-  background-image: url("./background.png");
+  background-image: url("./bg.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -202,4 +202,141 @@ nav ul li a:active {
 h1 {
   font-size: 36px;
   margin-top: 0;
+}
+
+/* Track-Symptoms Form */
+#track-symptoms form {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#track-symptoms h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#track-symptoms p {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#track-symptoms ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+#track-symptoms li {
+  margin-bottom: 10px;
+}
+
+#track-symptoms label {
+  font-size: 18px;
+  font-weight: normal;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+#track-symptoms input[type="checkbox"] {
+  display: inline-block;
+  margin-right: 10px;
+  transform: translateY(3px);
+  outline: 1px solid black;
+  border-radius: 50%;
+}
+
+#track-symptoms input[type="number"] {
+  display: inline-block;
+  width: 60px;
+  margin-left: 10px;
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 5px;
+  outline: 1px solid black;
+  text-align: center;
+  background-color: transparent;
+  color: black;
+}
+
+#track-symptoms button[type="submit"] {
+  display: block;
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: transparent;
+  color: black;
+  cursor: pointer;
+  outline: 1px solid black;
+}
+
+#track-symptoms button[type="submit"]:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Inhaler Use Form */
+#inhaler-use form {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#inhaler-use h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#inhaler-use label {
+  font-size: 18px;
+  font-weight: normal;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+#inhaler-use input[type="number"] {
+  display: inline-block;
+  width: 60px;
+  margin-left: 10px;
+  font-size: 16px;
+  padding: 4px;
+  border-radius: 4px;
+  outline: 1px solid black;
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: transparent;
+}
+
+#inhaler-use button[type="submit"] {
+  display: block;
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: transparent;
+  color: black;
+  cursor: pointer;
+  outline: 1px solid black;
+}
+
+#inhaler-use button[type="submit"]:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+#inhaler-use button[type="submit"]:active {
+  background-color: yellow;
+  color: #333;
 }

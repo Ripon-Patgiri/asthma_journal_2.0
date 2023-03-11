@@ -9,23 +9,122 @@
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Sono&display=swap");
     </style>
+    <script src="script.js" defer></script>
   </head>
   <body>
     <header>
       <h1 class="heading-title">Asthma_Journal</h1>
       <nav>
         <ul>
-          <li><a href="#track-symptoms">Track Symptoms</a></li>
-          <li><a href="#inhaler-use">Inhaler Use</a></li>
-          <li><a href="#check-report">Check Report</a></li>
+          <li>
+            <a href="#" onclick="showContent('track-symptoms')"
+              >Track Symptoms</a
+            >
+          </li>
+          <li>
+            <a href="#" onclick="showContent('inhaler-use')">Inhaler Use</a>
+          </li>
+          <li>
+            <a href="#" onclick="showContent('check-report')">Check Report</a>
+          </li>
           <li><a href="#sign-in">Sign In</a></li>
         </ul>
       </nav>
     </header>
     <div id="main-content">
-      <p>Welcome to Asthma Journal</p>
-      <p>This is the main content area</p>
-      <p>Click on the navigation buttons above to change the content</p>
+      <div id="track-symptoms" style="display: none">
+        <!-- Track Symptoms form -->
+        <form>
+          <h2>Track_Symptoms</h2>
+          <p>Please select the symptoms you have faced today:</p>
+          <ul>
+            <li>
+              <label>
+                <input
+                  type="checkbox"
+                  name="symptoms[]"
+                  value="Shortness of breath"
+                />
+                Shortness of breath
+              </label>
+              <input
+                type="number"
+                name="shortness_of_breath_count"
+                min="0"
+                step="1"
+                placeholder="Count"
+              />
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="symptoms[]" value="Cough" />
+                Cough
+              </label>
+              <input
+                type="number"
+                name="cough_count"
+                min="0"
+                step="1"
+                placeholder="Count"
+              />
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="symptoms[]" value="Wheezing" />
+                Wheezing
+              </label>
+              <input
+                type="number"
+                name="wheezing_count"
+                min="0"
+                step="1"
+                placeholder="Count"
+              />
+            </li>
+            <li>
+              <label>
+                <input
+                  type="checkbox"
+                  name="symptoms[]"
+                  value="Chest tightness"
+                />
+                Chest tightness
+              </label>
+              <input
+                type="number"
+                name="chest_tightness_count"
+                min="0"
+                step="1"
+                placeholder="Count"
+              />
+            </li>
+          </ul>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <div id="inhaler-use" style="display: none">
+        <!-- Inhaler Use form -->
+        <form>
+            <h2>Inhaler_Use</h2>
+          <label for="inhaler-use"
+            >Number of times you've used your inhaler today:</label
+          >
+          <input
+            type="number"
+            id="inhaler-use"
+            name="inhaler-use"
+            min="0"
+            max="10"
+          />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <div id="check-report" style="display: none">
+        <!-- Check Report form -->
+        <form>
+          <!-- form elements go here -->
+        </form>
+      </div>
     </div>
   </body>
 </html>
