@@ -2,7 +2,7 @@
   "name": "asthma_journal_2.0",
   "version": "1.0.0",
   "description": "Web Application to Track Asthma Symptoms and Inhaler Usage to better Manage Asthma.",
-  "main": "index.js",
+  "private": "true",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
